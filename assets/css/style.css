@@ -4,6 +4,9 @@ main, footer {
 @media only screen and (max-width: 992px) {
   header, main, footer {
     padding-left: 0; } }
+@media screen and (max-width: 670px) {
+  header {
+    min-height: 500px; } }
 html, body {
   position: relative; }
   html h1, body h1 {
@@ -20,10 +23,12 @@ html, body {
     z-index: 10;
     background-color: rgba(0, 0, 0, 0.5);
     /*dim the background*/ }
-  html main .about, body main .about {
+  html main .show, body main .show {
+    border-radius: 25px; }
+  html main .myheading, body main .myheading {
     margin-top: 0;
     border-bottom: 1px white dashed; }
-    html main .about i, body main .about i {
+    html main .myheading i, body main .myheading i {
       font-size: 60px !important;
       padding-right: 10px;
       margin-top: 25px; }

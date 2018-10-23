@@ -8,6 +8,12 @@ main, footer {
   }
 }
 
+@media screen and (max-width: 670px){
+  header{
+    min-height: 500px;
+  }
+}
+
 html, body {
   position: relative;
 
@@ -31,7 +37,10 @@ html, body {
   }
 
   main {
-    .about {
+    .show {
+      border-radius: 25px;
+    }
+    .myheading {
       margin-top: 0;
       border-bottom: 1px white dashed;
       i {
