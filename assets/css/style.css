@@ -4,8 +4,39 @@ main, footer {
 @media only screen and (max-width: 992px) {
   header, main, footer {
     padding-left: 0; } }
-html .intro, body .intro {
-  height: 300px;
-  width: 100%; }
+html, body {
+  position: relative; }
+  html h1, body h1 {
+    font-size: 80px;
+    font-weight: bolder; }
+  html .sidenav-trigger, body .sidenav-trigger {
+    z-index: 11; }
+  html #overlay, body #overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background-color: rgba(0, 0, 0, 0.5);
+    /*dim the background*/ }
+  html main .about, body main .about {
+    margin-top: 0;
+    border-bottom: 1px white dashed; }
+    html main .about i, body main .about i {
+      font-size: 60px !important;
+      padding-right: 10px;
+      margin-top: 25px; }
+  html main #profile, body main #profile {
+    height: 200px; }
+  html main .info .heading, body main .info .heading {
+    font-weight: bolder; }
+  html main .info .title, body main .info .title {
+    display: inline-block;
+    font-weight: bold;
+    border-bottom: 3px solid teal; }
+  html main .info .item, body main .info .item {
+    margin-left: 10px;
+    font-size: 18px; }
 
 /*# sourceMappingURL=style.css.map */

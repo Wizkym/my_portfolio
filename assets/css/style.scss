@@ -9,8 +9,55 @@ main, footer {
 }
 
 html, body {
-  .intro {
-    height: 300px;
+  position: relative;
+
+  h1 {
+    font-size: 80px;
+    font-weight: bolder;
+  }
+
+  .sidenav-trigger {
+    z-index: 11;
+  }
+
+  #overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100vh;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.5); /*dim the background*/
+  }
+
+  main {
+    .about {
+      margin-top: 0;
+      border-bottom: 1px white dashed;
+      i {
+        font-size: 60px !important;
+        padding-right: 10px;
+        margin-top: 25px;
+      }
+    }
+
+    #profile {
+      height: 200px;
+    }
+
+    .info {
+      .heading {
+        font-weight: bolder;
+      }
+      .title {
+        display: inline-block;
+        font-weight: bold;
+        border-bottom: 3px solid teal;
+      }
+      .item {
+        margin-left: 10px;
+        font-size: 18px;
+      }
+    }
   }
 }
