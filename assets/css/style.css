@@ -8,7 +8,10 @@ main, footer {
   header {
     min-height: 500px; } }
 html, body {
-  position: relative; }
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
   html h1, body h1 {
     font-size: 80px;
     font-weight: bolder; }
@@ -43,5 +46,15 @@ html, body {
   html main .info .item, body main .info .item {
     margin-left: 10px;
     font-size: 18px; }
+  html main .container main, body main .container main {
+    flex: 1; }
+  html main .container .cont, body main .container .cont {
+    display: inline-block;
+    margin-left: 10px; }
+  html .push, body .push {
+    height: 40vh; }
+  html footer, body footer {
+    clear-after: both;
+    text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

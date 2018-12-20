@@ -16,6 +16,9 @@ main, footer {
 
 html, body {
   position: relative;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
 
   h1 {
     font-size: 80px;
@@ -68,5 +71,24 @@ html, body {
         font-size: 18px;
       }
     }
+    .container {
+      main {
+        flex: 1;
+      }
+      .cont {
+        display: inline-block;
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .push {
+    height: 40vh;
+  }
+
+
+  footer {
+    clear-after: both;
+    text-align: center;
   }
 }
