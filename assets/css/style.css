@@ -51,6 +51,10 @@ html, body {
   html main .container .cont, body main .container .cont {
     display: inline-block;
     margin-left: 10px; }
+  html main .container .inst, body main .container .inst {
+    margin-bottom: 25px; }
+  html main .container .my-bag, body main .container .my-bag {
+    height: 200px; }
   html .push, body .push {
     height: 40vh; }
   html footer, body footer {
